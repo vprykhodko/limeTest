@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/main.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <div class="popup__content">
+            <div onclick="togglePopup()" class="close"><span>+</span></div>
+
+            <div class="text">
+                <span>Sector index: </span>
+                <span id="sectorIndex">1</span>
+            </div>
+
+            <button onclick="togglePopup(), start()" class="button">Lets GO!</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="picker"></div>
+
+        <div class="circle-holder">
+            <div id="circle" class="circle">
+                <div class="circle__sector circle__sector_1"><span class="number">1</span></div>
+                <div class="circle__sector circle__sector_2"><span class="number">2</span></div>
+                <div class="circle__sector circle__sector_3"><span class="number">3</span></div>
+                <div class="circle__sector circle__sector_4"><span class="number">4</span></div>
+                <div class="circle__sector circle__sector_5"><span class="number">5</span></div>
+                <div class="circle__sector circle__sector_6"><span class="number">6</span></div>
+            </div>
+        </div>
+
+        <button id="mainButton" onclick="start()" class="button">Lets GO!</button>
+    </div>
+
+    <script src="../dist/js/main.js"></script>
+</body>
+</html>
